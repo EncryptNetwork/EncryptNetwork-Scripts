@@ -12,6 +12,21 @@ sudo unzip encrypt-1.3.0.0-linux.zip -d /usr/local/bin/
 cd && sudo chmod +x /usr/local/bin/encrypt*
 echo "Creating .encrypt directory..."
 mkdir ~/.encrypt
+cd ~/.encrypt
+echo "Editing encrypt.conf..."
+echo rpcuser=someuserhere>> encrypt.conf
+echo rpcpassword=somepasswordhere>> encrypt.conf
+echo rpcallowip=127.0.0.1 >> encrypt.conf
+echo server=1 >> encrypt.conf
+echo daemon=1 >> encrypt.conf
+echo listen=1 >> encrypt.conf
+echo staking=0 >> encrypt.conf
+echo logtimestamps=1 >> encrypt.conf
+echo maxconnections=256 >> encrypt.conf
+echo masternode=1 >> encrypt.conf
+echo externalip= >> encrypt.conf
+echo masternodeprivkey= >> encrypt.conf
+vi encrypt.conf >> encrypt.conf
 echo "Setting up and enabling fail2ban..."
 sudo apt-get install fail2ban -y
 sudo ufw allow ssh
