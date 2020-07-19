@@ -14,18 +14,19 @@ echo "Creating .encrypt directory..."
 mkdir ~/.encrypt
 cd ~/.encrypt
 echo "Editing encrypt.conf..."
-echo rpcuser= >> encrypt.conf
-echo rpcpassword= >> encrypt.conf
-echo rpcallowip=127.0.0.1 >> encrypt.conf
-echo server=1 >> encrypt.conf
-echo daemon=1 >> encrypt.conf
-echo listen=1 >> encrypt.conf
-echo staking=0 >> encrypt.conf
-echo logtimestamps=1 >> encrypt.conf
-echo masternode=1 >> encrypt.conf
-echo externalip= >> encrypt.conf
-echo masternodeprivkey= >> encrypt.conf
-vi encrypt.conf >> encrypt.conf
+echo vi encrypt.conf
+echo rpcuser=someuserhere
+echo rpcpassword=somepasswordhere
+echo rpcallowip=127.0.0.1
+echo server=1
+echo daemon=1
+echo listen=1
+echo staking=0
+echo logtimestamps=1
+echo maxconnections=256
+echo masternode=1
+echo externalip=
+echo masternodeprivkey=
 echo "Setting up and enabling fail2ban..."
 sudo apt-get install fail2ban -y
 sudo ufw allow ssh
