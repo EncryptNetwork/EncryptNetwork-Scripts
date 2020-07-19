@@ -8,13 +8,14 @@ wget -N https://github.com/EncryptNetwork/EncryptNetwork/releases/download/1.3.0
 echo "Installing unzip..."
 sudo apt-get install unzip -y
 echo "Unzipping latest zip..."
-sudo unzip -jo encrypt-1.3.0.0-linux.zip -d /usr/local/bin
+cd 
+sudo unzip -q /Downloads/encrypt-1.3.0.0-linux.zip -d /usr/local/bin
 sudo chmod +x /usr/local/bin/encrypt*
 echo "Creating .encrypt directory..."
 mkdir ~/.encrypt
 cd ~/.encrypt
 echo "Editing encrypt.conf..."
-echo vi encrypt.conf
+vi encrypt.conf
 echo rpcuser=someuserhere
 echo rpcpassword=somepasswordhere
 echo rpcallowip=127.0.0.1
@@ -34,6 +35,8 @@ sudo ufw allow 2020
 sudo ufw allow 2121
 sudo ufw enable
 echo "Launching encryptd..."
+cd 
+cd /usr/local/bin
 encryptd -daemon
 echo "Cleaning up..."
 cd
