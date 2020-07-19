@@ -35,9 +35,8 @@ sudo ufw allow 2020
 sudo ufw allow 2121
 sudo ufw enable
 echo "Launching encryptd..."
-cd 
-cd /usr/local/bin
-./encryptd -daemon
+cd && cd /usr/local/bin
+echo ./encryptd -daemon
 echo "Cleaning up..."
 cd
 rm -rf encrypt-1.3.0.0-linux.zip
