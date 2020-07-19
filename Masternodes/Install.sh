@@ -8,14 +8,13 @@ wget -N https://github.com/EncryptNetwork/EncryptNetwork/releases/download/1.3.0
 echo "Installing unzip..."
 sudo apt-get install unzip -y
 echo "Unzipping latest zip..."
-cd 
-sudo unzip -q /Downloads/encrypt-1.3.0.0-linux.zip -d /usr/local/bin
-sudo chmod +x /usr/local/bin/encrypt*
+cd && cd Downloads
+sudo unzip -q encrypt-1.3.0.0-linux.zip -d /usr/local/bin/
+cd && sudo chmod +x /usr/local/bin/encrypt*
 echo "Creating .encrypt directory..."
 mkdir ~/.encrypt
 cd ~/.encrypt
 echo "Editing encrypt.conf..."
-vi encrypt.conf
 echo rpcuser=someuserhere
 echo rpcpassword=somepasswordhere
 echo rpcallowip=127.0.0.1
@@ -28,6 +27,7 @@ echo maxconnections=256
 echo masternode=1
 echo externalip=
 echo masternodeprivkey=
+vi encrypt.conf
 echo "Setting up and enabling fail2ban..."
 sudo apt-get install fail2ban -y
 sudo ufw allow ssh
@@ -37,7 +37,7 @@ sudo ufw enable
 echo "Launching encryptd..."
 cd 
 cd /usr/local/bin
-encryptd -daemon
+./encryptd -daemon
 echo "Cleaning up..."
 cd
 rm -rf encrypt-1.3.0.0-linux.zip
