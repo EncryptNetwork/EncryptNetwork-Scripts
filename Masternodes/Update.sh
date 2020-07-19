@@ -15,5 +15,5 @@ echo "Running encryptd..."
 encryptd -daemon
 echo "Cleaning up..."
 cd
-rm -rf encrypt-1.3.0.0-li
+rm -rf encrypt-1.3.0.0-linux.zip
 echo "Update completed!"
