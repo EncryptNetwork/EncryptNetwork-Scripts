@@ -13,7 +13,7 @@ Open your notepad or any text editor application on your pc and write this down 
 ```
 
 ### GETTING A VPS (STEP 1)
-Set up your VPS, we recommend https://www.vultr.com/?ref=8638319, and select ``DEPLOY INSTANCE`` and select the following
+Set up your VPS, we recommend [VULTR](https://www.vultr.com/?ref=8638319), and select ``DEPLOY INSTANCE`` and select the following
 - Cloud compute
 - Location -any
 - Server type: Ubuntu 18.04
