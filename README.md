@@ -1,4 +1,4 @@
-# Scripts
+# Encrypt Network Masternode & Staking Scripts
  Various scripts for setting up masternodes and staking.
 
 ### Before using these scripts (PRE-SETUP)
