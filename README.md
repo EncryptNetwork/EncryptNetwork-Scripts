@@ -86,18 +86,18 @@ Note: The script allows you to automatically install ``Encrypt`` from the ``Encr
 #### VPS WALLET CONFIGURATION (STEP 5)
 
 ```
-rpcuser=someuserhere>> encrypt.conf
-rpcpassword=somepasswordhere>> encrypt.conf
-rpcallowip=127.0.0.1 >> encrypt.conf
-server=1 >> encrypt.conf
-daemon=1 >> encrypt.conf
-listen=1 >> encrypt.conf
-staking=0 >> encrypt.conf
-logtimestamps=1 >> encrypt.conf
-maxconnections=256 >> encrypt.conf
-masternode=1 >> encrypt.conf
-externalip=yourexternaliphere>> encrypt.conf
-masternodeprivkey=yourmasternodeprivkeyhere>> encrypt.conf
+rpcuser=someuserhere
+rpcpassword=somepasswordhere
+rpcallowip=127.0.0.1
+server=1
+daemon=1
+listen=1
+staking=0
+logtimestamps=1
+maxconnections=256
+masternode=1
+externalip=yourexternaliphere
+masternodeprivkey=yourmasternodeprivkeyhere
 ```
 1. Change these following lines on the bash file named ``Config.sh`` by following steps below via ``vim``
 
