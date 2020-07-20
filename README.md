@@ -115,4 +115,5 @@ then
 2. Then open ``Config.sh`` file by typing ``./Config.sh``. 
 Note: It will automatically change your ``encrypt.conf`` file located on the ``encrypt`` directory inputting all the text above.
 
+if you have question regarding to the scripts feel free to head over to ``Encrypt Network Discord Channel`` (https://discord.gg/JhYe8z)
 # GREAT JOB! YOU CONFIGURED YOUR ENCRYPT MASTERNODE.
