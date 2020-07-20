@@ -110,7 +110,7 @@ then
 - change the ``somepasswordhere`` value to your own
 - change the ``yourexternaliphere`` value to your own which is located on your ``Cheat Sheet`` (e.g. 56.56.65.20:2020)
 - change the ``yourmasternodeprivkeyhere`` value to your own which is also located on your ``Cheat Sheet`` (e.g. 8799TqpXKkMkQ7Wyan7FueUk5pa2dydnhUYu5dpjeixvfh3k9No this is your ``MASTERNODE GENKEY``)
-	(To save and exit the editor press ``Esc`` then ``:wq!`` then press Enter)
+	(To save and exit the editor press ``Ctrl + C`` then type ``:wq!`` then press Enter)
 
 2. Then open ``Config.sh`` file by typing ``./Config.sh``. 
 Note: It will automatically change your ``encrypt.conf`` file located on the ``encrypt`` directory inputting all the text above.
