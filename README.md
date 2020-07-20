@@ -1,7 +1,7 @@
 # Encrypt Network Masternode & Staking Scripts
  Various scripts for setting up masternodes and staking.
 
-### Before using these scripts (PRE-SETUP)
+### BEFORE USING THESE SCRIPTS (PRE-SETUP)
 Open your notepad or any text editor application on your pc and write this down as your ``Cheat Sheet``
 ```
 1. MASTERNODE NAME = MN1
@@ -115,5 +115,20 @@ then
 2. Then open ``Config.sh`` file by typing ``./Config.sh``. 
 Note: It will automatically change your ``encrypt.conf`` file located on the ``encrypt`` directory inputting all the text above.
 
+### HOW TO UPDATE YOUR ENCRYPT DAEMON WITH A SCRIPT
+On your SSH Terminal type this lines below one at a time
+```
+rm -rf enscripts
+git clone https://github.com/getdzypher/EncryptNetwork-Scripts enscripts
+chmod -R 755 enscripts
+cd enscripts/Masternodes
+./Update.sh
+```
+Note: I will automatically updates your daemon
+
+
+
 if you have question regarding to the scripts feel free to head over to ``Encrypt Network Discord Channel`` (https://discord.gg/JhYe8z)
+
+
 # GREAT JOB! YOU CONFIGURED YOUR ENCRYPT MASTERNODE.
