@@ -22,9 +22,7 @@ sudo ufw enable
 echo "Launching encryptd..."
 cd && cd /usr/local/bin
 encryptd -daemon
-echo "Generating Masternode Private Key"
-encrypt-cli masternode genkey
 echo "Cleaning up..."
-cd
+cd && cd /enscripts/Masternodes
 rm -rf encrypt-1.3.0.0-linux.zip
 echo "ENCRYPT Masternode installed successfully!"
