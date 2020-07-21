@@ -113,8 +113,7 @@ then
 Note: It will automatically change your ``encrypt.conf`` file located on the ``encrypt`` directory inputting all the text above.
 
 ### HOW TO UPDATE YOUR ENCRYPT DAEMON WITH A SCRIPT
-Just run the ``Update.sh`` shell file
-On your SSH Terminal type this line below
+Just run the ``Update.sh`` shell file. On your SSH Terminal type this line below
 ```
 ./Update.sh
 ```
