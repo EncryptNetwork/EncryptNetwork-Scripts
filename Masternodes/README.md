@@ -113,12 +113,9 @@ then
 Note: It will automatically change your ``encrypt.conf`` file located on the ``encrypt`` directory inputting all the text above.
 
 ### HOW TO UPDATE YOUR ENCRYPT DAEMON WITH A SCRIPT
-On your SSH Terminal type this lines below one at a time
+Just run the ``Update.sh`` shell file
+On your SSH Terminal type this line below
 ```
-rm -rf enscripts
-git clone https://github.com/getdzypher/EncryptNetwork-Scripts enscripts
-chmod -R 755 enscripts
-cd enscripts/Masternodes
 ./Update.sh
 ```
 Note: I will automatically updates your daemon
