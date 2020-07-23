@@ -22,6 +22,6 @@ echo "Running encryptd..."
 cd && cd /usr/local/bin
 encryptd -daemon
 echo "Cleaning up..."
-cd && cd /enscripts/Masternodes
+cd && cd enscripts/Masternodes
 rm -rf encrypt-1.3.0.0-linux.zip
 echo "ENCRYPT Update completed!"
