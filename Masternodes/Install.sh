@@ -4,11 +4,11 @@ echo "Starting ENCRYPT Masternode download and install script"
 echo "Updating/Upgrading OS..."
 sudo apt update && sudo apt upgrade -y
 echo "Downloading EncryptNetwork latest build..."
-wget -N https://github.com/EncryptNetwork/EncryptNetwork/releases/download/1.3.0.0/encrypt-1.3.0.0-linux.zip
+wget -N https://github.com/EncryptNetwork/EncryptNetwork/releases/download/v1.3.1/encrypt-1.3.1.0-linux.zip
 echo "Installing unzip..."
 sudo apt-get install unzip -y
 echo "Unzipping latest zip..."
-sudo unzip encrypt-1.3.0.0-linux.zip -d /usr/local/bin/
+sudo unzip encrypt-1.3.1.0-linux.zip -d /usr/local/bin/
 cd && sudo chmod +x /usr/local/bin/encrypt*
 echo "Creating .encrypt directory..."
 mkdir ~/.encrypt
@@ -24,5 +24,5 @@ cd && cd /usr/local/bin
 encryptd -daemon
 echo "Cleaning up..."
 cd && cd enscripts/Masternodes
-rm -rf encrypt-1.3.0.0-linux.zip
+rm -rf encrypt-1.3.1.0-linux.zip
 echo "ENCRYPT Masternode installed successfully!"
